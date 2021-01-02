@@ -32,8 +32,8 @@ const options = {
                   }
               }
 
-              var user = await verifyLogin(user_details) 
-              console.log(user);
+              var user = await verifyLogin(user_details);
+              
               if (user){
                 // Any object returned will be saved in `user` property of the JWT
                 return Promise.resolve(user)

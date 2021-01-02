@@ -1,13 +1,14 @@
-import {useState,useEffect} from "react"
+import React, {useState,useEffect} from "react"
 import {useSession} from "next-auth/client"
 
-export default function Secret(){
+export default function Dashboard(){
+
     const [session,loading] = useSession();
     const [content,setContent] = useState();
-
+    
     useEffect(() => {
         const fetchData = async() => {
-            const res = await fetch("/api/profile/getProfile");
+            const res = await fetch("/api/is_authenticated/getSession");
             const json = await res.json();
             if(json.usr.isAuth){
                 setContent(json.usr.usrmail);
@@ -22,17 +23,14 @@ export default function Secret(){
         return(
             <main>
                 <div>
-                    <h1>You need to login first.</h1>
+                    <h1>Please Login to Appear For Examination.</h1>
                 </div>
             </main>
         )
     }
     return(
-        <main>
-            <div>
-                <h1>Protected Page.</h1>
-                <p>{content}</p>
-            </div>
-        </main>
+    <div className="Exam_Test_app">
+        hello
+    </div>
     )
 }
