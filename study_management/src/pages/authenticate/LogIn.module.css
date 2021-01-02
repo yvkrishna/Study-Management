@@ -1,0 +1,19 @@
+.Login_App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.main_part{
+    width: 50%;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1;
+    font-family: var(--font-family);
+}
+.img1{
+    width: 90%;
+}
+.img2{
+    max-width: 150px;
+}
