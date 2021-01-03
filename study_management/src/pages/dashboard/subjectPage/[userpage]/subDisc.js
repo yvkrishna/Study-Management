@@ -8,7 +8,7 @@ export default function SubPage({username, email, rollNumber}){
     const router = useRouter();
 
     const getTest= () =>{
-        router.push("/dashboard/subjectPage/"+email+"/tests/"+router.query.subjectPage);
+        router.push("/dashboard/subjectPage/"+username+"/tests/"+router.query.subjectPage);
     }
 
     return(

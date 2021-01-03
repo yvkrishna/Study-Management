@@ -62,7 +62,7 @@ export const getStaticProps = async (context) => {
         },body: JSON.stringify({email:context.params.user_dashboard}) 
       }
       
-    const res = await fetch("http://localhost:3000/api/profile/getprofile",options);
+    const res = await fetch("http://localhost:3000/api/is_authenticated/getprofile",options);
     const student = await res.json();
     const std = Object.values(student)[1];
     const  {username,email,rollNumber} = std;

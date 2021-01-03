@@ -13,6 +13,7 @@
     "@material-ui/lab": "^4.0.0-alpha.57",
     "bcrypt": "^5.0.0",
     "bootstrap": "^4.5.3",
+    "dexie": "^3.0.3",
     "mongodb": "^3.6.3",
     "next": "10.0.4",
     "next-auth": "^3.1.0",
